@@ -11,6 +11,7 @@ import org.thymeleaf.spring5.SpringTemplateEngine;
 import org.thymeleaf.spring5.templateresolver.SpringResourceTemplateResolver;
 import org.thymeleaf.spring5.view.ThymeleafViewResolver;
 
+//applicationContext.xml
 @Configuration
 @EnableWebMvc
 @ComponentScan("web")
@@ -41,6 +42,7 @@ public class WebConfig implements WebMvcConfigurer {
     }
 
 
+    //Задается шаблонизатор
     @Override
     public void configureViewResolvers(ViewResolverRegistry registry) {
         ThymeleafViewResolver resolver = new ThymeleafViewResolver();
