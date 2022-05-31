@@ -41,7 +41,6 @@ public class WebConfig implements WebMvcConfigurer {
         return templateEngine;
     }
 
-
     //Задается шаблонизатор
     @Override
     public void configureViewResolvers(ViewResolverRegistry registry) {

@@ -23,8 +23,7 @@ public class CarController {
     }
 
     @GetMapping("/cars")
-    public String printCars(@RequestParam(value = "count", required = false) Integer count,
-                            Model model) {
+    public String printCars(@RequestParam Integer count, Model model) {
         List<Car> resultCarList;
 
         if (count == null || count > carList.size()) {
